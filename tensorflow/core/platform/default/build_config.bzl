@@ -1,7 +1,7 @@
 # Platform-specific build configurations.
 
-load("/google/protobuf/protobuf", "cc_proto_library")
-load("/google/protobuf/protobuf", "py_proto_library")
+load("//google/protobuf:protobuf.bzl", "cc_proto_library")
+load("//google/protobuf:protobuf.bzl", "py_proto_library")
 
 # Appends a suffix to a list of deps.
 def tf_deps(deps, suffix):

@@ -1,6 +1,6 @@
 licenses(["restricted"])  # MPL2, portions GPL v3, LGPL v3, BSD-like
 
-load("/tensorflow/tensorflow", "if_cuda")
+load("//tensorflow:tensorflow.bzl", "if_cuda")
 
 package(default_visibility = ["//visibility:public"])
 
